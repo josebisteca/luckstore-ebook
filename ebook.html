@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Este E-book VAI MUDAR SUA VIDA</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #cc5200;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+      }
+      .container {
+        max-width: 650px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+      }
+      h1 {
+        font-size: 2.4rem;
+        color: #000;
+        margin-bottom: 1rem;
+      }
+      .impacto {
+        font-weight: bold;
+        color: #000;
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.35rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        color: #fff;
+      }
+      .botao {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(90deg, #ffcc00, #ff9900);
+        color: #000;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+      .frase {
+        font-style: italic;
+        margin-top: 2rem;
+        color: #fff;
+        font-size: 1.3rem;
+      }
+      .contador {
+        font-size: 2rem;
+        margin: 1rem 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .selo {
+        margin-top: 1.5rem;
+        display: inline-block;
+        padding: 0.7rem 1.4rem;
+        background: linear-gradient(45deg, #ffffff, #f1c40f);
+        color: #222;
+        font-weight: bold;
+        border-radius: 12px;
+        box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+        font-size: 1rem;
+      }
+      .selo-secundario {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: linear-gradient(45deg, #ffffff, #f1c40f);
+        padding: 0.5rem 1rem;
+        border-radius: 12px;
+        font-weight: bold;
+        color: #222;
+        box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Este E-book <span class="impacto">VAI MUDAR SUA VIDA</span></h1>
+      <p>Você está prestes a acessar um conteúdo que tem transformado a vida de milhares de pessoas.</p>
+      <p>Se você busca liberdade financeira, crescimento pessoal e viver da internet — você está no lugar certo.</p>
+      <p>Esse é o guia que faltava para você dar o primeiro passo na direção certa. Simples, direto, poderoso.</p>
+      <div class="contador" id="contador"></div>
+      <a class="botao" href="#">Quero meu E-book agora!</a>
+      <div class="selo">100% SATISFAÇÃO GARANTIDA</div>
+      <div class="selo-secundario">GARANTIA</div>
+      <p class="frase">"O sucesso é uma jornada de coragem, não de sorte." – Napoleon Hill</p>
+    </div>
+    <script>
+      const fim = new Date().getTime() + 24 * 60 * 60 * 1000;
+      const contador = document.getElementById("contador");
+      function atualizarContador() {
+        const agora = new Date().getTime();
+        const tempoRestante = fim - agora;
+        const horas = Math.floor((tempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
+        contador.innerHTML = `Oferta acaba em: ${horas}h ${minutos}m ${segundos}s`;
+        if (tempoRestante < 0) contador.innerHTML = "Oferta encerrada!";
+      }
+      setInterval(atualizarContador, 1000);
+    </script>
+  </body>
+</html>
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Este E-book <span class="impacto">VAI MUDAR SUA VIDA</span></h1>
+      <p>Você está prestes a conhecer estratégias incríveis que vão transformar sua jornada.</p>
+      <p>Leia com atenção e comece a aplicar ainda hoje!</p>
+    </div>
+  </body>
+</html>
